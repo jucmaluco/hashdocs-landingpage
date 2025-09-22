@@ -7,10 +7,9 @@
           <h2>HashDocs</h2>
         </div>
         <div class="nav-menu">
-          <a href="#features" class="nav-link">Features</a>
+          <a href="#features" class="nav-link">Hashdocs</a>
           <a href="#about" class="nav-link">About</a>
           <a href="#contact" class="nav-link">Contact</a>
-          <button class="cta-button">Get Started</button>
         </div>
       </div>
     </nav>
@@ -20,45 +19,30 @@
       <div class="hero-container">
         <div class="hero-content">
           <h1 class="hero-title">
-            Revolutionize Your Documentation
-            <span class="gradient-text">with HashDocs</span>
+            Revolutionize Your Documentation with
+            <span class="gradient-text">HashDocs</span>
           </h1>
           <p class="hero-description">
-            Create, manage, and share beautiful documentation effortlessly. 
-            Built for modern teams who value clarity and collaboration.
+            Create, manage, and sign documents effortlessly. 
+            Built using <strong> blockchain </strong> for teams who value control and security.
           </p>
-          <div class="hero-buttons">
-            <button class="primary-button">Start Free Trial</button>
-            <button class="secondary-button">Watch Demo</button>
-          </div>
-          <div class="hero-stats">
-            <div class="stat">
-              <span class="stat-number">10K+</span>
-              <span class="stat-label">Active Users</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">50K+</span>
-              <span class="stat-label">Documents Created</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">99.9%</span>
-              <span class="stat-label">Uptime</span>
-            </div>
-          </div>
         </div>
-        <div class="hero-image">
-          <div class="hero-placeholder">
-            <div class="mock-dashboard">
-              <div class="mock-header"></div>
-              <div class="mock-content">
-                <div class="mock-sidebar"></div>
-                <div class="mock-main">
-                  <div class="mock-doc"></div>
-                  <div class="mock-doc"></div>
-                  <div class="mock-doc"></div>
-                </div>
+        <div class="hero-video-section">
+          <div class="hero-video-container">
+            <video 
+              class="hero-video" 
+              autoplay 
+              muted 
+              loop 
+              playsinline
+            >
+              <source src="/videos/landingvideo.mp4" type="video/mp4">
+              <source src="/videos/landingvideo.webm" type="video/webm">
+              <!-- Fallback for browsers that don't support video -->
+              <div class="video-fallback">
+                <p>Your browser doesn't support video playback.</p>
               </div>
-            </div>
+            </video>
           </div>
         </div>
       </div>
@@ -166,7 +150,7 @@
 </template>
 
 <script setup lang="ts">
-// Add any reactive data or methods here if needed
+// Component logic can be added here if needed
 </script>
 
 <style scoped>
@@ -177,15 +161,8 @@
 
 /* Navigation */
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
+  background: transparent;
   padding: 1rem 0;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
@@ -199,7 +176,7 @@
 
 .nav-logo h2 {
   margin: 0;
-  color: #2c3e50;
+  color: white;
   font-weight: 700;
 }
 
@@ -211,18 +188,18 @@
 
 .nav-link {
   text-decoration: none;
-  color: #2c3e50;
+  color: white;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #667eea;
+  color: #ffd89b;
 }
 
 .cta-button {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: white;
+  color: #667eea;
   border: none;
   padding: 0.75rem 1.5rem;
   border-radius: 25px;
@@ -233,6 +210,8 @@
 
 .cta-button:hover {
   transform: translateY(-2px);
+  background: #ffd89b;
+  color: #2c3e50;
 }
 
 /* Hero Section */
@@ -244,13 +223,15 @@
 }
 
 .hero-container {
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+  gap: 3rem;
 }
 
 .hero-title {
@@ -262,7 +243,7 @@
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+  background: linear-gradient(135deg, #98c9e9 0%, #1197f0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -337,61 +318,43 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* Hero Image */
-.hero-image {
+/* Hero Video Section */
+.hero-video-section {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
-.hero-placeholder {
-  width: 100%;
-  max-width: 500px;
+.hero-video-container {
+  width: 65%;
+  max-width: 800px;
   height: 400px;
-  background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 2rem;
 }
 
-.mock-dashboard {
+.hero-video {
   width: 100%;
   height: 100%;
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
-.mock-header {
-  height: 60px;
-  background: #f8f9fa;
-  border-bottom: 1px solid #e9ecef;
-}
-
-.mock-content {
-  display: flex;
-  height: calc(100% - 60px);
-}
-
-.mock-sidebar {
-  width: 200px;
-  background: #f8f9fa;
-  border-right: 1px solid #e9ecef;
-}
-
-.mock-main {
-  flex: 1;
-  padding: 1rem;
+.video-fallback {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-}
-
-.mock-doc {
-  height: 60px;
-  background: #e9ecef;
-  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
 }
 
 /* Features Section */
@@ -564,8 +527,7 @@
   }
   
   .hero-container {
-    grid-template-columns: 1fr;
-    text-align: center;
+    gap: 2rem;
   }
   
   .hero-title {
@@ -588,6 +550,11 @@
   
   .features-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero-video-container {
+    width: 90%;
+    height: 300px;
   }
 }
 </style>
