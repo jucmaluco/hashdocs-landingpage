@@ -10,6 +10,8 @@
           <a href="#features" class="nav-link">Hashdocs</a>
           <a href="#about" class="nav-link">About</a>
           <a href="#contact" class="nav-link">Contact</a>
+          <a href="#login" class="nav-link">Login</a>
+          <a href="#signup" class="nav-link">Signup</a>
         </div>
       </div>
     </nav>
