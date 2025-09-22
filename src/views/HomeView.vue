@@ -12,7 +12,7 @@
           <a href="#contact" class="nav-link">Contact</a>
           <a href="#login" class="nav-link">Login</a>
           <a href="#signup" class="nav-link">Signup</a>
-        </div>
+        </div>  
       </div>
     </nav>
 
