@@ -1,64 +1,149 @@
-# hashdocs-ladingpage
+# HashDocs Landing Page
 
-This template should help get you started developing with Vue 3 in Vite.
+A modern, responsive landing page for **HashDocs** - a blockchain-based document signing platform built on Polygon network.
 
-## Recommended IDE Setup
+## 🚀 About HashDocs
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+HashDocs is a revolutionary document signing platform that combines the security and immutability of blockchain technology with user-friendly design. Built on the Polygon network, it offers:
 
-## Type Support for `.vue` Imports in TS
+- **Blockchain Signatures**: Cryptographic signatures stored permanently on Polygon blockchain
+- **Immutable Records**: Tamper-proof document storage with permanent verification
+- **Web3 Security**: Decentralized architecture eliminating single points of failure
+- **User-Friendly**: Accessible to mainstream users without requiring crypto knowledge
+- **Cost-Effective**: Minimal transaction fees on Polygon's Layer 2 solution
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## 🎨 Landing Page Features
 
-## Customize configuration
+This mock landing page showcases:
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- **Hero Section**: Compelling headline with looping video demonstration
+- **Feature Grid**: 6 key benefits highlighting blockchain advantages
+- **Competitive Comparison**: Side-by-side comparison with traditional e-signature platforms
+- **FAQ Section**: Interactive accordion with common questions and answers
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **Modern UI/UX**: Glass morphism effects, smooth animations, and professional styling
 
-## Project Setup
+## 🛠️ Technology Stack
 
-```sh
+- **Vue 3** - Progressive JavaScript framework
+- **TypeScript** - Type-safe development
+- **Vite** - Fast build tool and dev server
+- **CSS3** - Modern styling with gradients, animations, and glass morphism
+- **Responsive Design** - Mobile-first approach
+
+## 📋 Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn package manager
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone <repository-url>
+cd hashdocs-ladingpage
+```
+
+### 2. Install Dependencies
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### 3. Start Development Server
 
-```sh
+```bash
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+The application will be available at `http://localhost:5173`
 
-```sh
+### 4. Build for Production
+
+```bash
 npm run build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### 5. Preview Production Build
 
-```sh
+```bash
+npm run preview
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── views/
+│   └── HomeView.vue          # Main landing page component
+├── assets/
+│   ├── main.css             # Global styles
+│   └── base.css             # CSS custom properties and base styles
+├── router/
+│   └── index.ts             # Vue Router configuration
+└── App.vue                  # Root component
+```
+
+## 🎯 Future Implementation
+
+This landing page serves as a **mockup and prototype** for the full HashDocs platform. The actual implementation will include:
+
+- **Backend Integration**: Smart contracts on Polygon network
+- **Web3 Wallet Integration**: MetaMask, WalletConnect, and other wallet providers
+- **Document Management**: Upload, signing, and verification workflows
+- **User Authentication**: Account creation and management
+- **Payment Processing**: Subscription and transaction fee handling
+- **API Integration**: Blockchain interaction and document storage
+
+## 🧪 Testing
+
+### Run Unit Tests
+
+```bash
 npm run test:unit
 ```
 
-### Run End-to-End Tests with [Playwright](https://playwright.dev)
+### Run End-to-End Tests
 
-```sh
+```bash
 # Install browsers for the first run
 npx playwright install
 
-# When testing on CI, must build the project first
-npm run build
-
-# Runs the end-to-end tests
+# Run E2E tests
 npm run test:e2e
-# Runs the tests only on Chromium
-npm run test:e2e -- --project=chromium
-# Runs the tests of a specific file
-npm run test:e2e -- tests/example.spec.ts
-# Runs the tests in debug mode
-npm run test:e2e -- --debug
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### Lint Code
 
-```sh
+```bash
 npm run lint
 ```
+
+## 🎨 Customization
+
+The landing page is fully customizable:
+
+- **Colors**: Modify CSS custom properties in `src/assets/base.css`
+- **Content**: Update text and images in `src/views/HomeView.vue`
+- **Styling**: Adjust component styles in the `<style>` section
+- **Layout**: Modify the HTML structure as needed
+
+## 📱 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## 📄 License
+
+This project is for demonstration purposes as part of the HashDocs platform development.
+
+## 🤝 Contributing
+
+This is a mock landing page for the HashDocs project. For contributions to the main platform, please refer to the main HashDocs repository.
+
+---
+
+**Note**: This is a static landing page mockup. The full HashDocs platform will include backend services, smart contracts, and Web3 integration for complete document signing functionality.
